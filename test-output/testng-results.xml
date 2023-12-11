@@ -2,104 +2,104 @@
 <testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-08T20:54:12 IST" name="Default suite" finished-at="2023-12-08T21:02:43 IST" duration-ms="511376">
+  <suite started-at="2023-12-11T17:02:36 IST" name="Default suite" finished-at="2023-12-11T17:10:51 IST" duration-ms="494190">
     <groups>
     </groups>
-    <test started-at="2023-12-08T20:54:12 IST" name="Default test" finished-at="2023-12-08T21:02:43 IST" duration-ms="511376">
+    <test started-at="2023-12-11T17:02:36 IST" name="Default test" finished-at="2023-12-11T17:10:51 IST" duration-ms="494190">
       <class name="Test.LoginPageTest">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:54:12 IST" name="launchURL" finished-at="2023-12-08T20:54:25 IST" duration-ms="12844" status="PASS">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:02:37 IST" name="launchURL" finished-at="2023-12-11T17:02:47 IST" duration-ms="10299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="loginPage()[pri:1, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:54:25 IST" name="loginPage" finished-at="2023-12-08T20:54:30 IST" duration-ms="5251" status="PASS">
+        <test-method signature="loginPage()[pri:1, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:02:47 IST" name="loginPage" finished-at="2023-12-11T17:02:51 IST" duration-ms="4168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPage -->
-        <test-method signature="VerifyLeftpanel()[pri:2, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:54:30 IST" name="VerifyLeftpanel" finished-at="2023-12-08T20:54:35 IST" duration-ms="4614" status="PASS">
+        <test-method signature="VerifyLeftpanel()[pri:2, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:02:51 IST" name="VerifyLeftpanel" finished-at="2023-12-11T17:02:55 IST" duration-ms="3725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLeftpanel -->
-        <test-method signature="leftPanelSearch()[pri:3, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:54:35 IST" name="leftPanelSearch" finished-at="2023-12-08T20:54:42 IST" duration-ms="6912" status="PASS">
+        <test-method signature="leftPanelSearch()[pri:3, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:02:55 IST" name="leftPanelSearch" finished-at="2023-12-11T17:03:01 IST" duration-ms="6379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- leftPanelSearch -->
-        <test-method signature="HeaderElement()[pri:4, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:54:42 IST" name="HeaderElement" finished-at="2023-12-08T20:54:51 IST" duration-ms="9604" status="PASS">
+        <test-method signature="HeaderElement()[pri:4, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:03:01 IST" name="HeaderElement" finished-at="2023-12-11T17:03:11 IST" duration-ms="9617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HeaderElement -->
-        <test-method signature="FooterVerification()[pri:5, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:54:51 IST" name="FooterVerification" finished-at="2023-12-08T20:55:00 IST" duration-ms="9300" status="PASS">
+        <test-method signature="FooterVerification()[pri:5, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:03:11 IST" name="FooterVerification" finished-at="2023-12-11T17:03:20 IST" duration-ms="9224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FooterVerification -->
-        <test-method signature="helpicon()[pri:6, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:55:00 IST" name="helpicon" finished-at="2023-12-08T20:55:08 IST" duration-ms="7772" status="PASS">
+        <test-method signature="helpicon()[pri:6, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:03:20 IST" name="helpicon" finished-at="2023-12-11T17:03:27 IST" duration-ms="6496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- helpicon -->
-        <test-method signature="admintabfunctionality()[pri:7, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:55:08 IST" name="admintabfunctionality" finished-at="2023-12-08T20:55:23 IST" duration-ms="15182" status="PASS">
+        <test-method signature="admintabfunctionality()[pri:7, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:03:27 IST" name="admintabfunctionality" finished-at="2023-12-11T17:03:41 IST" duration-ms="14698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- admintabfunctionality -->
-        <test-method signature="UserManagementMenu()[pri:10, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:55:23 IST" name="UserManagementMenu" finished-at="2023-12-08T20:55:51 IST" duration-ms="27441" status="PASS">
+        <test-method signature="UserManagementMenu()[pri:10, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:03:41 IST" name="UserManagementMenu" finished-at="2023-12-11T17:04:08 IST" duration-ms="27201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserManagementMenu -->
-        <test-method signature="jobmenu()[pri:11, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:55:51 IST" name="jobmenu" finished-at="2023-12-08T20:56:16 IST" duration-ms="24686" status="PASS">
+        <test-method signature="jobmenu()[pri:11, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:04:08 IST" name="jobmenu" finished-at="2023-12-11T17:04:32 IST" duration-ms="24011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jobmenu -->
-        <test-method signature="organizationMenu()[pri:12, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:56:16 IST" name="organizationMenu" finished-at="2023-12-08T20:56:41 IST" duration-ms="24922" status="PASS">
+        <test-method signature="organizationMenu()[pri:12, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:04:32 IST" name="organizationMenu" finished-at="2023-12-11T17:04:57 IST" duration-ms="24092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- organizationMenu -->
-        <test-method signature="corporateBrandingTitle()[pri:13, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:56:41 IST" name="corporateBrandingTitle" finished-at="2023-12-08T20:57:16 IST" duration-ms="35595" status="PASS">
+        <test-method signature="corporateBrandingTitle()[pri:13, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:04:57 IST" name="corporateBrandingTitle" finished-at="2023-12-11T17:05:32 IST" duration-ms="35046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- corporateBrandingTitle -->
-        <test-method signature="qualificationMenu()[pri:13, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:57:16 IST" name="qualificationMenu" finished-at="2023-12-08T20:57:40 IST" duration-ms="24388" status="PASS">
+        <test-method signature="qualificationMenu()[pri:13, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:05:32 IST" name="qualificationMenu" finished-at="2023-12-11T17:05:56 IST" duration-ms="23990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qualificationMenu -->
-        <test-method signature="configurationMenu()[pri:14, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:57:40 IST" name="configurationMenu" finished-at="2023-12-08T20:58:05 IST" duration-ms="24370" status="PASS">
+        <test-method signature="configurationMenu()[pri:14, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:05:56 IST" name="configurationMenu" finished-at="2023-12-11T17:06:19 IST" duration-ms="23802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurationMenu -->
-        <test-method signature="nationalitiesmMenu()[pri:15, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:58:05 IST" name="nationalitiesmMenu" finished-at="2023-12-08T20:58:34 IST" duration-ms="29325" status="PASS">
+        <test-method signature="nationalitiesmMenu()[pri:15, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:06:19 IST" name="nationalitiesmMenu" finished-at="2023-12-11T17:06:48 IST" duration-ms="28267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nationalitiesmMenu -->
-        <test-method signature="corporateBrandingMenu()[pri:16, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:58:34 IST" name="corporateBrandingMenu" finished-at="2023-12-08T20:58:56 IST" duration-ms="22306" status="PASS">
+        <test-method signature="corporateBrandingMenu()[pri:16, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:06:48 IST" name="corporateBrandingMenu" finished-at="2023-12-11T17:07:09 IST" duration-ms="21468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- corporateBrandingMenu -->
-        <test-method signature="expandCollapseFunctionality()[pri:16, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:58:57 IST" name="expandCollapseFunctionality" finished-at="2023-12-08T20:59:23 IST" duration-ms="26313" status="PASS">
+        <test-method signature="expandCollapseFunctionality()[pri:16, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:07:09 IST" name="expandCollapseFunctionality" finished-at="2023-12-11T17:07:33 IST" duration-ms="24147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- expandCollapseFunctionality -->
-        <test-method signature="nationalitiesDeleteIcon()[pri:17, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T20:59:23 IST" name="nationalitiesDeleteIcon" finished-at="2023-12-08T21:00:15 IST" duration-ms="51876" status="PASS">
+        <test-method signature="nationalitiesDeleteIcon()[pri:17, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:07:33 IST" name="nationalitiesDeleteIcon" finished-at="2023-12-11T17:08:24 IST" duration-ms="50976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nationalitiesDeleteIcon -->
-        <test-method signature="nationalitieseditIcon()[pri:18, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T21:00:15 IST" name="nationalitieseditIcon" finished-at="2023-12-08T21:00:55 IST" duration-ms="40672" status="PASS">
+        <test-method signature="nationalitieseditIcon()[pri:18, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:08:24 IST" name="nationalitieseditIcon" finished-at="2023-12-11T17:09:04 IST" duration-ms="39668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nationalitieseditIcon -->
-        <test-method signature="nationalitiesEditPageCancel()[pri:19, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T21:00:55 IST" name="nationalitiesEditPageCancel" finished-at="2023-12-08T21:01:43 IST" duration-ms="47271" status="PASS">
+        <test-method signature="nationalitiesEditPageCancel()[pri:19, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:09:04 IST" name="nationalitiesEditPageCancel" finished-at="2023-12-11T17:09:50 IST" duration-ms="46223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nationalitiesEditPageCancel -->
-        <test-method signature="addFromNationalities()[pri:20, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T21:01:43 IST" name="addFromNationalities" finished-at="2023-12-08T21:02:26 IST" duration-ms="43801" status="PASS">
+        <test-method signature="addFromNationalities()[pri:20, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:09:50 IST" name="addFromNationalities" finished-at="2023-12-11T17:10:34 IST" duration-ms="43625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addFromNationalities -->
-        <test-method signature="collapseBar()[pri:21, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T21:02:26 IST" name="collapseBar" finished-at="2023-12-08T21:02:34 IST" duration-ms="7188" status="PASS">
+        <test-method signature="collapseBar()[pri:21, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:10:34 IST" name="collapseBar" finished-at="2023-12-11T17:10:41 IST" duration-ms="7024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- collapseBar -->
-        <test-method signature="expandBar()[pri:22, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T21:02:34 IST" name="expandBar" finished-at="2023-12-08T21:02:42 IST" duration-ms="8809" status="PASS">
+        <test-method signature="expandBar()[pri:22, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:10:41 IST" name="expandBar" finished-at="2023-12-11T17:10:50 IST" duration-ms="9152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- expandBar -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-08T21:02:42 IST" name="closebrowser" finished-at="2023-12-08T21:02:43 IST" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Test.LoginPageTest@7d0b7e3c]" started-at="2023-12-11T17:10:50 IST" name="closebrowser" finished-at="2023-12-11T17:10:51 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->

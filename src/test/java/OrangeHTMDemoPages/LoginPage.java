@@ -59,7 +59,7 @@ public class LoginPage extends baseconfig{
 				@FindBy(xpath = "//input[@placeholder='Search']")
 				WebElement inputSearch;
 
-				public void leftPanelSearch() throws InterruptedException {
+				public void leftPanelSearch()  {
 					String searchquery = "Admin";
 					inputSearch.sendKeys(searchquery);
 					inputSearch.sendKeys(Keys.ENTER);
@@ -73,7 +73,7 @@ public class LoginPage extends baseconfig{
 					else
 						System.out.println("Search text field not working");
 
-					Thread.sleep(3000);
+					
 				}
 
 // Test Case-4 : Verify the correctness and appearance of the header elements.
@@ -88,7 +88,7 @@ public class LoginPage extends baseconfig{
 	WebElement usernameverification;
 
 	
-	public void headerElement() throws InterruptedException {
+	public void headerElement()  {
 
 		if (logoverifrication.isDisplayed()) {
 			System.out.println("Logo is present in the header");
@@ -96,7 +96,7 @@ public class LoginPage extends baseconfig{
 			System.out.println("Logo is not present in the header");
 
 		}
-		Thread.sleep(3000);
+		
 		if (topheaderverification1.isDisplayed()) {
 			System.out.println("Dashboard present in the header");
 		} else {
@@ -109,7 +109,7 @@ public class LoginPage extends baseconfig{
 			System.out.println("User Not Identified");
 
 		}
-		Thread.sleep(3000);
+		
 		
 	}
 // Test Case-5: Verify the correctness and appearance of footer elements.
@@ -120,7 +120,7 @@ public class LoginPage extends baseconfig{
 	@FindBy(xpath = "//div[@class='oxd-layout-footer']/p[2]")
 	WebElement footerAllRightReserved;
 
-	public void footerElement() throws InterruptedException {
+	public void footerElement()  {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,900)");
@@ -130,7 +130,7 @@ public class LoginPage extends baseconfig{
 			System.out.println("hrmversion not Displayed");
 
 		}
-		Thread.sleep(3000);
+		
 
 		if (footerAllRightReserved.isDisplayed()) {
 			System.out.println("All Right Reserved Displayed");
@@ -138,7 +138,7 @@ public class LoginPage extends baseconfig{
 			System.out.println("All Right Reserved Not Displayed");
 
 		}
-		Thread.sleep(3000);
+		
 
 	}	
 // Test case -6: Verify the correctness and visibility of the 'Help' icon.
@@ -146,7 +146,7 @@ public class LoginPage extends baseconfig{
 	@FindBy(xpath = "//button[@title='Help']")
 	WebElement helpicon;
 
-	public void helpicon() throws InterruptedException {
+	public void helpicon()  {
 
 		helpicon.click();
 		String currentWindowHandle = driver.getWindowHandle();
@@ -157,7 +157,7 @@ public class LoginPage extends baseconfig{
 			}
 		}
 
-		Thread.sleep(3000);
+		
 		driver.close();
 		driver.switchTo().window(currentWindowHandle);
 
@@ -174,17 +174,16 @@ public class LoginPage extends baseconfig{
 	@FindBy(xpath = "//div/span[@class='oxd-text oxd-text--span']")
 	WebElement records;
 
-	public void admintabfunctionality() throws InterruptedException 
+	public void admintabfunctionality()  
 	{
-		Thread.sleep(3000);
+		
 		admintab.click();
-		Thread.sleep(6000);
 
 		if (systemUsers.isDisplayed())
 			System.out.println("System User section is visible");
 		else 
 			System.out.println("System User section is not visible");
-		Thread.sleep(3000);
+		
 		if (records.isDisplayed()) 
 			System.out.println("Records available");
 		 else 
@@ -203,13 +202,11 @@ public class LoginPage extends baseconfig{
 	@FindBy(xpath = "//div[@class='oxd-table-card']")
 	WebElement foundrecord;
 
-public void adminUsernameSearch() throws InterruptedException {
-	Thread.sleep(6000);
+public void adminUsernameSearch()  {
 
 	systemUsersearchKeyward.sendKeys("admin");
-	Thread.sleep(6000);
 	record_search_button.click();
-	Thread.sleep(6000);
+	
 
 	List<WebElement> foundrecord = driver.findElements(By.xpath("//div[@class='orangehrm-container']"));
 
@@ -219,27 +216,27 @@ public void adminUsernameSearch() throws InterruptedException {
 		System.out.println("User Not Found");
 	}
 
-	Thread.sleep(3000);
+	
 }
 
 // Test Case-9: Select all
 
 @FindBy (xpath="//body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-paper-container']/div[@class='orangehrm-container']/div[@role='table']/div[@role='rowgroup']/div[@role='row']/div[1]")
 WebElement selectall;
-public void selectAllRecord() throws InterruptedException {
+public void selectAllRecord()  {
 	JavascriptExecutor js= (JavascriptExecutor)driver;
 	js.executeScript("window.scrollBy(0,600)");
-	Thread.sleep(6000);
+	
 	selectall.click();
 }
 
 // Test Case-10: Deselect all
 @FindBy (xpath = "//body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-paper-container']/div[@class='orangehrm-container']/div[@role='table']/div[@role='rowgroup']/div[@role='row']/div[1]")
 WebElement Deselectall;
-public void deselectAll() throws InterruptedException {
-	Thread.sleep(6000);
+public void deselectAll()  {
+	
 	Deselectall.click();
-	Thread.sleep(3000);
+	
 }
 	
 // Test Case 11- Verify the functionality of User management Menu
@@ -249,11 +246,11 @@ WebElement usermanagementMenu;
 	
 @FindBy (xpath = "//ul/li/a[contains(text(),'Users')]")
 WebElement option1;
-	public void UserManagementMenu()throws InterruptedException
+	public void UserManagementMenu()
 	{
-		Thread.sleep(3000);
+		
 		usermanagementMenu.click();
-		Thread.sleep(6000);
+		
 
 		if(option1.equals(option1))
 		{
@@ -263,7 +260,7 @@ WebElement option1;
 			System.out.println("User Management Option not displayed");
 		}
 
-		Thread.sleep(3000);
+		
 	}
 	
 	//Test Case 12- Verify the functionality of Job Menu
@@ -274,11 +271,11 @@ WebElement option1;
 	@FindBy (xpath ="//ul[@role='menu']" )
 	WebElement joboptions;
 	
-	public void jobmenu()throws InterruptedException
+	public void jobmenu()
 	{
 
 
-		jobmenu.click();Thread.sleep(6000);
+		jobmenu.click();
 
 		if(joboptions.equals(joboptions))
 		{
@@ -288,7 +285,7 @@ WebElement option1;
 			System.out.println("Job Options not displayed");
 		}
 
-		Thread.sleep(3000);
+		
 	}
 	
 	
@@ -300,9 +297,9 @@ WebElement option1;
 	
 	//Test Case 13- Verify the functionality of Organization Menu
 
-	public void organizationMenu()throws InterruptedException
+	public void organizationMenu()
 	{
-		organizationmenu.click();Thread.sleep(6000);
+		organizationmenu.click();
 		if(organizationoptions.equals(organizationoptions))
 		{
 			System.out.println("Organization Options displayed");
@@ -311,7 +308,7 @@ WebElement option1;
 			System.out.println("Organization Options not displayed");
 		}
 
-		Thread.sleep(3000);
+		
 	}
 	
 	@FindBy(xpath = "//ul/li/span[contains(text(),'Qualifications')]")
@@ -322,11 +319,11 @@ WebElement option1;
 	
 	//Test Case 14- Verify the functionality of Qualifications  Menu
 	
-	public void qualificationMenu() throws InterruptedException
+	public void qualificationMenu() 
 	{
 
 
-		Qualificationsmenu.click();Thread.sleep(6000);
+		Qualificationsmenu.click();
 
 		if(Qualificationsmenuoptions.equals(Qualificationsmenuoptions))
 		{
@@ -336,7 +333,7 @@ WebElement option1;
 			System.out.println("Qualifications Options not displayed");
 		}
 
-		Thread.sleep(3000);
+		
 	}
 	
 	@FindBy (xpath = "//ul/li/span[contains(text(),'Configuration')]")
@@ -347,11 +344,11 @@ WebElement option1;
 	
 	//Test Case 15- Verify the functionality of Configuration   Menu
 
-	public void configurationMenu()throws InterruptedException
+	public void configurationMenu()
 	{
 
 
-		Configurationmenu.click();Thread.sleep(6000);
+		Configurationmenu.click();
 
 		if(Configurationmenuoptions.equals(Configurationmenuoptions))
 		{
@@ -361,7 +358,7 @@ WebElement option1;
 			System.out.println("Configurations Options not displayed");
 		}
 
-		Thread.sleep(3000);
+		
 	}	
 	
 	
@@ -373,11 +370,11 @@ WebElement option1;
 	@FindBy (xpath = "//div/h6")
 	WebElement nationalitiestitle;
 	
-	public void nationalitiesmMenu()throws InterruptedException
+	public void nationalitiesmMenu()
 	{
 		
 
-		nationalities.click();Thread.sleep(6000);
+		nationalities.click();
 
 		if(nationalitiestitle.equals("Nationalities"))
 		{
@@ -387,18 +384,18 @@ WebElement option1;
 			System.out.println("Nationlities title matched");
 		}
 
-		Thread.sleep(7000);
+		
 	}
 	
 	
 	@FindBy (xpath = "//ul/li/a[contains(text(),'Corporate Branding')]")
 	WebElement CorporateBranding;
 
-	public void corporateBrandingMenu() throws InterruptedException
+	public void corporateBrandingMenu() 
 	{
 	//Test Case 17- Verify the functionality of Corporate Branding Menu
 
-		CorporateBranding.click();Thread.sleep(6000);
+		CorporateBranding.click();
 	}
 	
 	@FindBy (xpath = "//i[@class='oxd-icon bi-caret-up-fill']")
@@ -408,13 +405,13 @@ WebElement option1;
 	WebElement systemuserECex;
 	// Test Case 18: System user section expand and collapse
 	
-	public void expandCollapseFunctionality() throws InterruptedException {
+	public void expandCollapseFunctionality()  {
 
 
 		systemuserEC.click();
-		Thread.sleep(3000);
+		
 		System.out.println("System User collapse");
-		Thread.sleep(6000);
+		
 
 		systemuserECex.click();
 		System.out.println("System User Expand");
@@ -429,16 +426,16 @@ WebElement option1;
 	
 // Test case-19: Verify the title of the Nationalities page delete icon
 
-	public void nationalitiesDeleteIcon()throws InterruptedException
+	public void nationalitiesDeleteIcon()
 	{
 
-		nationalitiesRecordDeleteButton.click();Thread.sleep(7000);
+		nationalitiesRecordDeleteButton.click();
 
-		Thread.sleep(7000);
+		
 
 		WebElement delete = driver
 				.findElement(By.xpath("//button[normalize-space()='Yes, Delete']"));
-		delete.click();Thread.sleep(7000);
+		delete.click();
 	}
 	
 	
@@ -449,12 +446,12 @@ WebElement nationalitiesRecordEditButton;
 @FindBy (xpath = "//div/h6")
 WebElement editNationalities;
 
-	public void nationalitieseditIcon() throws InterruptedException
+	public void nationalitieseditIcon() 
 	{
-		Thread.sleep(3000);
+		
 
 		nationalitiesRecordEditButton.click();
-		Thread.sleep(7000);
+		
 
 		if(editNationalities.equals("Edit Nationality"))
 		{
@@ -470,9 +467,9 @@ WebElement editNationalities;
 	WebElement cancelButtonOnNationalitiesEdit;
 	// //Test case-21: Verify the Cancel button on Nationalities page Edit icon
 
-	public void nationalitiesEditPageCancel() throws InterruptedException
+	public void nationalitiesEditPageCancel() 
 	{
-		cancelButtonOnNationalitiesEdit.click();Thread.sleep(7000);
+		cancelButtonOnNationalitiesEdit.click();
 	}
 	
 	
@@ -484,11 +481,11 @@ WebElement editNationalities;
 	@FindBy (xpath = "//button[normalize-space()='Cancel']")
 	WebElement cancelButtonOnNationalitiesadd;
 	
-	public void addFromNationalities() throws InterruptedException
+	public void addFromNationalities() 
 	{
-		addButtonOnNationalities.click();Thread.sleep(7000);
+		addButtonOnNationalities.click();
 
-		cancelButtonOnNationalitiesadd.click();Thread.sleep(7000);
+		cancelButtonOnNationalitiesadd.click();
 
 	}
 	
@@ -496,20 +493,20 @@ WebElement editNationalities;
 @FindBy(xpath = "//button[@role='none']")
 WebElement collapseBar;
 	
-	public void collapseBar() throws InterruptedException
+	public void collapseBar() 
 	{
 
 
-		collapseBar.click();Thread.sleep(3000);
+		collapseBar.click();
 	}
 
 	// Test Case-24: Expand Bar
 	@FindBy(xpath = "//button[@role='none']")
 	WebElement expandBar;
 
-	public void expandBar() throws InterruptedException
+	public void expandBar() 
 	{
-		expandBar.click();Thread.sleep(3000);
+		expandBar.click();
 
 
 	}	
@@ -520,11 +517,11 @@ WebElement collapseBar;
 	// Test Case-25: Verify the title of Corporate Branding
 
 	
-	public void corporateBrandingTitle() throws InterruptedException
+	public void corporateBrandingTitle() 
 	{
 
 
-		CBtitle.click();Thread.sleep(6000);
+		CBtitle.click();
 
 		if(CBtitle.equals("Corporate Branding"))
 		{
@@ -534,7 +531,7 @@ WebElement collapseBar;
 			System.out.println("Corporate Branding title matched");
 		}
 
-		Thread.sleep(7000);
+		
 	}
 	
 	
